@@ -10,5 +10,6 @@ namespace ShopFolio.Api.DAL
         public DbSet<Product> Products { get; set; }
         public DbSet<CustomField> CustomFields { get; set; }
         public DbSet<FieldType> FieldTypes { get; set; }
+        public DbSet<FieldToValue> FieldToValues { get; set; }
     }
 }

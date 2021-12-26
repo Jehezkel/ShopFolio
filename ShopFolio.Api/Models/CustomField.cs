@@ -1,5 +1,12 @@
 namespace ShopFolio.Api.Models
 {
+    public class FieldToValue
+    {
+
+        public virtual Product Product { get; set; }
+        public CustomField CustomField { get; set; }
+        public string Value { get; set; }
+    }
     public class CustomField
     {
         public int Id { get; set; }
