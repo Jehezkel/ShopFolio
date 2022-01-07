@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using ShopFolio.Api.DAL;
@@ -11,9 +12,10 @@ using ShopFolio.Api.DAL;
 namespace ShopFolio.Api.Migrations
 {
     [DbContext(typeof(ShopFolioDbContext))]
-    partial class ShopFolioDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220107150246_Identity")]
+    partial class Identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

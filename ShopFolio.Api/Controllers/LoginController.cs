@@ -11,16 +11,14 @@ namespace ShopFolio.Api.Controllers
     [Route("[controller]")]
     public class LoginController : ControllerBase
     {
-        private readonly IConfiguration config;
 
-        public LoginController(IConfiguration config)
+        public LoginController()
         {
-            this.config = config;
         }
-        [AllowAnonymous]
-        [HttpPost]
-        public IActionResult Login(){
+        // [AllowAnonymous]
+        // [HttpPost]
+        // public IActionResult Login(){
             
-        }
+        // }
     }
 }
