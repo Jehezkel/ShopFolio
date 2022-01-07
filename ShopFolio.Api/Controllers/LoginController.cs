@@ -17,20 +17,10 @@ namespace ShopFolio.Api.Controllers
         public LoginController()
         {
         }
-<<<<<<< HEAD
         // [AllowAnonymous]
         // [HttpPost]
         // public IActionResult Login(){
             
         // }
-=======
-        [AllowAnonymous]
-        [HttpPost]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        public Task<IActionResult> Login([FromBody]LoginViewModel loginViewModel){
-            throw new NotImplementedException();
-        }
->>>>>>> 63792c25dbc6da393abc8d6ad29b91b1a8e9b9fd
     }
 }
